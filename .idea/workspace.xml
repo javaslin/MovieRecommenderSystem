@@ -2,254 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8072b019-2ca6-4254-a4b2-e60941bb03c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieRecommenderSystem.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/core/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/core/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/core/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/core/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/recom/Recommendation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetContentBasedRecommendationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetFuzzySearchMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetGenresMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetGenresTopMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetHotRecommendationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetHybridRecommendationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetItemCFMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetNewMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetRateMoreMoviesRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetStreamRecsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/GetUserCFRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/LoginUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/RegisterUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/request/UpdateUserGenresRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/rest/MovieRestApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/rest/UserRestApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/rest/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/RatingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/RecommenderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/TagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/utils/Configure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/utils/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/resources/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/application-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/application-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/classes/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/HdrHistogram-2.1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/bson-3.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/commons-codec-1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/compiler-0.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/elasticsearch-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/elasticsearch-rest-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/hppc-0.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/httpasyncclient-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/httpclient-4.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/httpcore-4.4.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/httpcore-nio-4.4.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-annotations-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-core-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-databind-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-dataformat-cbor-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-dataformat-smile-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jackson-dataformat-yaml-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jcl-over-slf4j-1.7.22.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jna-4.4.0-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/joda-time-2.9.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/jopt-simple-5.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lang-mustache-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/log4j-api-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/log4j-core-2.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-analyzers-common-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-backward-codecs-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-core-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-grouping-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-highlighter-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-join-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-memory-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-misc-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-queries-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-queryparser-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-sandbox-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-spatial-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-spatial-extras-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-spatial3d-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/lucene-suggest-6.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/mongodb-driver-3.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/mongodb-driver-core-3.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-3.10.6.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-buffer-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-codec-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-codec-http-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-common-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-handler-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-resolver-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/netty-transport-4.1.13.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/parent-join-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/percolator-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/reindex-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/securesm-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/slf4j-api-1.7.22.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/slf4j-log4j12-1.7.22.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/snakeyaml-1.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-context-support-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/t-digest-3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/transport-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/transport-netty3-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/lib/transport-netty4-client-5.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/BusinessServer/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/classes/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/conf/logging.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/conf/tomcat-users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/conf/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/logs/access_log.2019-02-16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/businessServer/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coremodel/coremodel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coremodel/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/OfflineRecommender.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$adjustALSParams$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$anonfun$getRmse$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/ALSTriner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MongoConfig$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MongoConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/Movie$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MovieRating$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MovieRating.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MovieRecs$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/MovieRecs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$9$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$anonfun$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$typecreator2$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$$typecreator4$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/OfflineRecommender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/Recommendation$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/Recommendation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/UserRecs$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/target/classes/com/shilin/offline/UserRecs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/resources/small/movies.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/resources/small/ratings.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/resources/small/tags.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$anonfun$storeDataInES$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$typecreator2$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$typecreator4$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$$typecreator6$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/DataLoader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/ESConfig$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/ESConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/MongoConfig$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/MongoConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Movie$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Rating$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Rating.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Tag$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/com/shilin/dataloader/Tag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/small/movies.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/small/ratings.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/dataloader/target/classes/small/tags.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/kafkastream/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/LogProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/statisticsRecommender.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/GenresRecommendation$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/GenresRecommendation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/MongoConfig$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/MongoConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Movie$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Movie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Rating$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Rating.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Recommendation$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/Recommendation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$3$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$3$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$anonfun$main$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$typecreator2$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$$typecreator4$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/target/classes/com/shilin/statistics/StatisticsRecommender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coremodel/src/main/scala/com/shilin/scala/model/Model.scala" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/website/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/website/website" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coremodel/coremodel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coremodel/coremodel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coremodel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coremodel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/dataloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/dataloader/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -290,46 +59,46 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="java" value="1981" />
+          <entry key="java" value="2018" />
           <entry key="jsp" value="15" />
           <entry key="properties" value="7" />
-          <entry key="scala" value="1184" />
+          <entry key="scala" value="1413" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="1008" />
+          <entry key="xml" value="1035" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1981" />
+          <entry key="JAVA" value="2018" />
           <entry key="JSP" value="15" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="7" />
-          <entry key="Scala" value="1184" />
-          <entry key="XML" value="1008" />
+          <entry key="Scala" value="1413" />
+          <entry key="XML" value="1035" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="csv" value="2" />
-          <entry key="java" value="44" />
+          <entry key="java" value="46" />
           <entry key="jsp" value="1" />
           <entry key="properties" value="6" />
-          <entry key="scala" value="10" />
+          <entry key="scala" value="16" />
           <entry key="ts" value="1" />
-          <entry key="xml" value="20" />
+          <entry key="xml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="44" />
+          <entry key="JAVA" value="46" />
           <entry key="JSP" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="6" />
-          <entry key="Scala" value="10" />
+          <entry key="Scala" value="16" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="20" />
+          <entry key="XML" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -342,28 +111,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/coremodel/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5022">
-              <caret line="200" column="41" selection-start-line="200" selection-start-column="41" selection-end-line="200" selection-end-column="41" />
+            <state relative-caret-position="2106">
+              <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+              <folding>
+                <element signature="e#31#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -371,8 +125,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+            <state relative-caret-position="459">
+              <caret line="152" column="32" selection-start-line="152" selection-start-column="32" selection-end-line="152" selection-end-column="32" />
+              <folding>
+                <element signature="e#32#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coremodel/src/main/scala/com/shilin/scala/model/Model.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -380,40 +182,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="159" column="15" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
+            <state relative-caret-position="1613">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/MovieService.java">
+        <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/package-info.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/RatingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/RecommenderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="432">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -445,17 +227,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/recommender/dataloader/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/Dataloader.scala" />
-        <option value="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" />
-        <option value="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommendre.scala" />
-        <option value="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala" />
         <option value="$PROJECT_DIR$/recommender/pom.xml" />
-        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala" />
-        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" />
-        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala" />
-        <option value="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/kafkastream/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/LogProcessor.java" />
         <option value="$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/Application.java" />
@@ -485,6 +259,16 @@
         <option value="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/TagService.java" />
         <option value="$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/UserService.java" />
         <option value="$PROJECT_DIR$/coremodel/pom.xml" />
+        <option value="$PROJECT_DIR$/recommender/dataloader/pom.xml" />
+        <option value="$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java" />
+        <option value="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" />
+        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" />
+        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala" />
+        <option value="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala" />
+        <option value="$PROJECT_DIR$/coremodel/src/main/scala/com/shilin/scala/model/Model.scala" />
+        <option value="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" />
+        <option value="$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala" />
+        <option value="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala" />
       </list>
     </option>
@@ -496,6 +280,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="nonRecursive" value="true" />
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -559,6 +349,253 @@
               <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="dataloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kafkastream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="offline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="statisticsRecommender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="statisticsRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="statisticsRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="statisticsRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="statisticsRecommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingRcommender" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingRcommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingRcommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="StreamingRcommender" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -568,14 +605,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550804667671" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550812243735" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3345588" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="ts.external.directory.path" value="E:\QQ文件\MovieRecommenderSystem\website\website\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -681,12 +718,20 @@
       <workItem from="1550664788655" duration="969000" />
       <workItem from="1550666256463" duration="387000" />
       <workItem from="1550799182413" duration="67000" />
-      <workItem from="1550803466402" duration="1321000" />
+      <workItem from="1550803466402" duration="5628000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1550804827611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550804827611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50019000" />
+    <option name="totallyTimeSpent" value="54326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-140" width="1456" height="916" extended-state="6" />
@@ -743,41 +788,6 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="17" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/kafkastream/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -789,13 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -972,59 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataloader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coremodel/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5022">
-          <caret line="200" column="41" selection-start-line="200" selection-start-column="41" selection-end-line="200" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1059,10 +1013,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/dataloader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coremodel/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="129" column="23" selection-start-line="129" selection-start-column="23" selection-end-line="129" selection-end-column="23" />
+          <folding>
+            <element signature="e#31#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/kafkastream/src/main/java/com/shilin/kafkastream/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/OfflineRecommender.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="e#28#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/shilin/offline/ALSTriner.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="50" column="27" lean-forward="true" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
+          <folding>
+            <element signature="e#28#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coremodel/src/main/scala/com/shilin/scala/model/Model.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/src/main/scala/com/shilin/statistics/StatisticsRecommender.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="152" column="32" selection-start-line="152" selection-start-column="32" selection-end-line="152" selection-end-column="32" />
+          <folding>
+            <element signature="e#32#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="159" column="15" selection-start-line="159" selection-start-column="15" selection-end-line="159" selection-end-column="15" />
+        <state relative-caret-position="1613">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,7 +1181,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>businessServer</last-edited>
+          <last-edited>StreamingRcommender</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -4,55 +4,11 @@ package com.shilin.statistics
 import java.text.SimpleDateFormat
 import java.util.Date
 
+import com.shilin.scala.model._
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
+import com.shilin.java.model.Constant._
 
-
-/**
-  * Movie数据集，数据集字段通过分割
-  *
-  * 151^                          电影的ID
-  * Rob Roy (1995)^               电影的名称
-  * In the highlands ....^        电影的描述
-  * 139 minutes^                  电影的时长
-  * August 26, 1997^              电影的发行日期
-  * 1995^                         电影的拍摄日期
-  * English ^                     电影的语言
-  * Action|Drama|Romance|War ^    电影的类型
-  * Liam Neeson|Jessica Lange...  电影的演员
-  * Michael Caton-Jones           电影的导演
-  *
-  * tag1|tag2|tag3|....           电影的Tag
-  **/
-
-case class Movie(val mid: Int, val name: String, val descri: String, val timelong: String, val issue: String,
-                 val shoot: String, val language: String, val genres: String, val actors: String, val directors: String)
-
-/**
-  * Rating数据集，用户对于电影的评分数据集，用，分割
-  *
-  * 1,           用户的ID
-  * 31,          电影的ID
-  * 2.5,         用户对于电影的评分
-  * 1260759144   用户对于电影评分的时间
-  */
-case class Rating(val uid: Int, val mid: Int, val score: Double, val timestamp: Int)
-
-/**
-  * MongoDB的连接配置
-  *
-  * @param uri MongoDB的连接
-  * @param db  MongoDB要操作数据库
-  */
-case class MongoConfig(val uri: String, val db: String)
-
-/**
-  * 推荐对象
-  *
-  * @param rid 推荐的Movie的mid
-  * @param r   Movie的评分
-  */
-case class Recommendation(rid: Int, r: Double)
 
 /**
   * 电影类别的推荐
@@ -60,19 +16,10 @@ case class Recommendation(rid: Int, r: Double)
   * @param genres 电影的类别
   * @param recs   top10的电影的集合
   */
-case class GenresRecommendation(genres: String, recs: Seq[Recommendation])
 
 
 object StatisticsRecommender {
 
-  val MONGODB_RATING_COLLECTION = "Rating"
-  val MONGODB_MOVIE_COLLECTION = "Movie"
-
-  //统计的表的名称
-  val RATE_MORE_MOVIES = "RateMoreMovies"
-  val RATE_MORE_RECENTLY_MOVIES = "RateMoreRecentlyMovies"
-  val AVERAGE_MOVIES = "AverageMovies"
-  val GENRES_TOP_MOVIES = "GenresTopMovies"
 
   // 入口方法
   def main(args: Array[String]): Unit = {
@@ -98,17 +45,17 @@ object StatisticsRecommender {
     val ratingDF = spark
       .read
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_RATING_COLLECTION)
-      .format("com.mongodb.spark.sql")
+      .option("collection", MONGO_RATING_COLLECTION)
+      .format(MONGO_DRIVER_CLASS)
       .load()
-      .as[Rating]
+      .as[MovieRating]
       .toDF()
 
     val movieDF = spark
       .read
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_MOVIE_COLLECTION)
-      .format("com.mongodb.spark.sql")
+      .option("collection", MONGO_MOVIE_COLLECTION)
+      .format(MONGO_DRIVER_CLASS)
       .load()
       .as[Movie]
       .toDF()
@@ -124,9 +71,9 @@ object StatisticsRecommender {
     rateMoreMoviesDF
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", RATE_MORE_MOVIES)
+      .option("collection", MONGO_RATE_MORE_MOVIES)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //统计以月为单位拟每个电影的评分数
@@ -149,9 +96,9 @@ object StatisticsRecommender {
     rateMoreRecentlyMovies
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", RATE_MORE_RECENTLY_MOVIES)
+      .option("collection", MONGO_RATE_MORE_RECENTLY_MOVIES)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //统计每个电影的平均评分
@@ -160,9 +107,9 @@ object StatisticsRecommender {
     averageMoviesDF
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", AVERAGE_MOVIES)
+      .option("collection", MONGO_AVERAGE_MOVIES)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //统计每种电影类型中评分最高的10个电影
@@ -197,9 +144,9 @@ object StatisticsRecommender {
     genrenTopMovies
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", GENRES_TOP_MOVIES)
+      .option("collection", MONGO_GENRES_TOP_MOVIES)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //关闭Spark

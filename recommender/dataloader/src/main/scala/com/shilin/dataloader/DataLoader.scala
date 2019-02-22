@@ -4,6 +4,7 @@ import java.net.InetAddress
 
 import com.mongodb.casbah.commons.MongoDBObject
 import com.mongodb.casbah.{MongoClient, MongoClientURI}
+import com.shilin.scala.model._
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest
@@ -11,30 +12,19 @@ import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest
 import org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsRequest
 import org.elasticsearch.common.settings.Settings
 import org.elasticsearch.common.transport.InetSocketTransportAddress
+import com.shilin.java.model.Constant._
 import org.elasticsearch.transport.client.PreBuiltTransportClient
 
-case class Movie(val mid: Int, val name: String, val descri: String,
-                 val timelong: String, val issue: String,
-                 val shoot: String, val language: String, val genres: String, val actors: String,
-                 val directors: String)
 
-case class Rating(val uid: Int, val mid: Int, val score: Double, val timestamp: Int)
-
-case class Tag(val uid: Int, val mid: Int, val tag: String, val timestamp: Int)
-
-case class MongoConfig(val uri: String, val db: String)
-
-case class ESConfig(val httpHosts: String, val transportHosts: String,
-                    val index: String, val clustername: String)
 
 object DataLoader {
   val MOVIE_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\movies.csv"
   val RATING_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\ratings.csv"
   val TAG_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\tags.csv"
 
-  val MONGODB_MOVIE_COLLECTION = "Movie"
-  val MONGODB_RATING_COLLECTION = "Rating"
-  val MONGODB_TAG_COLLECTION = "Tag"
+  //  val MONGODB_MOVIE_COLLECTION = "Movie"
+  //  val MONGODB_RATING_COLLECTION = "Rating"
+  //  val MONGODB_TAG_COLLECTION = "Tag"
 
   val ES_MOVIE_INDEX = "Movie"
 
@@ -46,7 +36,7 @@ object DataLoader {
       "mongo.db" -> "recommender",
       "es.httpHosts" -> "bigdata:9200",
       "es.transportHosts" -> "bigdata:9300",
-      "es.index" -> "recommender",
+      "es.index" -> ES_INDEX,
       "es.cluster.name" -> "es-cluster"
 
     )
@@ -65,7 +55,7 @@ object DataLoader {
     val ratingRDD = spark.sparkContext.textFile(RATING_DATA_PATH)
     val ratingDF = ratingRDD.map(item => {
       val attr = item.split(",")
-      Rating(attr(0).toInt, attr(1).toInt, attr(2).toDouble, attr(3).toInt)
+      MovieRating(attr(0).toInt, attr(1).toInt, attr(2).toDouble, attr(3).toInt)
     }).toDF()
 
     val tagRDD = spark.sparkContext.textFile(TAG_DATA_PATH)
@@ -127,41 +117,41 @@ object DataLoader {
     val mongoClient = MongoClient(MongoClientURI(mongoConfig.uri))
 
     //如果MongoDB中有对应的数据库，那么应该删除
-    mongoClient(mongoConfig.db)(MONGODB_MOVIE_COLLECTION).dropCollection()
-    mongoClient(mongoConfig.db)(MONGODB_RATING_COLLECTION).dropCollection()
-    mongoClient(mongoConfig.db)(MONGODB_TAG_COLLECTION).dropCollection()
+    mongoClient(mongoConfig.db)(MONGO_MOVIE_COLLECTION).dropCollection()
+    mongoClient(mongoConfig.db)(MONGO_RATING_COLLECTION).dropCollection()
+    mongoClient(mongoConfig.db)(MONGO_TAG_COLLECTION).dropCollection()
 
     //将当前数据写入到MongoDB
     movieDF
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_MOVIE_COLLECTION)
+      .option("collection", MONGO_MOVIE_COLLECTION)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     ratingDF
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_RATING_COLLECTION)
+      .option("collection", MONGO_RATING_COLLECTION)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     tagDF
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_TAG_COLLECTION)
+      .option("collection", MONGO_TAG_COLLECTION)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //对数据表建索引
-    mongoClient(mongoConfig.db)(MONGODB_MOVIE_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
-    mongoClient(mongoConfig.db)(MONGODB_RATING_COLLECTION).createIndex(MongoDBObject("uid" -> 1))
-    mongoClient(mongoConfig.db)(MONGODB_RATING_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
-    mongoClient(mongoConfig.db)(MONGODB_TAG_COLLECTION).createIndex(MongoDBObject("uid" -> 1))
-    mongoClient(mongoConfig.db)(MONGODB_TAG_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
+    mongoClient(mongoConfig.db)(MONGO_MOVIE_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
+    mongoClient(mongoConfig.db)(MONGO_RATING_COLLECTION).createIndex(MongoDBObject("uid" -> 1))
+    mongoClient(mongoConfig.db)(MONGO_RATING_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
+    mongoClient(mongoConfig.db)(MONGO_TAG_COLLECTION).createIndex(MongoDBObject("uid" -> 1))
+    mongoClient(mongoConfig.db)(MONGO_TAG_COLLECTION).createIndex(MongoDBObject("mid" -> 1))
 
     //关闭MongoDB的连接
     mongoClient.close()
@@ -197,7 +187,7 @@ object DataLoader {
       .option("es.http.timeout", "100m")
       .option("es.mapping.id", "mid")
       .mode("overwrite")
-      .format("org.elasticsearch.spark.sql")
+      .format(ES_DRIVER_CLASS)
       .save(eSConfig.index + "/" + ES_MOVIE_INDEX)
 
   }

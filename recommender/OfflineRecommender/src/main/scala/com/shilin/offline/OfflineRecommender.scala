@@ -1,9 +1,11 @@
 package com.shilin.offline
 
+import com.shilin.scala.model._
 import org.apache.spark.SparkConf
 import org.apache.spark.mllib.recommendation.{ALS, Rating}
 import org.apache.spark.sql.SparkSession
 import org.jblas.DoubleMatrix
+import com.shilin.java.model.Constant._
 
 /**
   * Movie数据集，数据集字段通过分割
@@ -22,45 +24,16 @@ import org.jblas.DoubleMatrix
   * tag1|tag2|tag3|....           电影的Tag
   **/
 
-case class Movie(val mid: Int, val name: String, val descri: String, val timelong: String, val issue: String,
-                 val shoot: String, val language: String, val genres: String, val actors: String, val directors: String)
 
-/**
-  * Rating数据集，用户对于电影的评分数据集，用，分割
-  *
-  * 1,           用户的ID
-  * 31,          电影的ID
-  * 2.5,         用户对于电影的评分
-  * 1260759144   用户对于电影评分的时间
-  */
-case class MovieRating(val uid: Int, val mid: Int, val score: Double, val timestamp: Int)
 
-/**
-  * MongoDB的连接配置
-  *
-  * @param uri MongoDB的连接
-  * @param db  MongoDB要操作数据库
-  */
-case class MongoConfig(val uri: String, val db: String)
 
-//推荐
-case class Recommendation(rid: Int, r: Double)
-
-// 用户的推荐
-case class UserRecs(uid: Int, recs: Seq[Recommendation])
-
-//电影的相似度
-case class MovieRecs(uid: Int, recs: Seq[Recommendation])
 
 object OfflineRecommender {
 
-  val MONGODB_RATING_COLLECTION = "Rating"
-  val MONGODB_MOVIE_COLLECTION = "Movie"
 
   val USER_MAX_RECOMMENDATION = 10
 
-  val USER_RECS = "UserRecs"
-  val MOVIE_RECS = "MovieRecs"
+
 
   //入口方法
   def main(args: Array[String]): Unit = {
@@ -86,8 +59,8 @@ object OfflineRecommender {
     val ratingRDD = spark
       .read
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_RATING_COLLECTION)
-      .format("com.mongodb.spark.sql")
+      .option("collection", MONGO_RATING_COLLECTION)
+      .format(MONGO_DRIVER_CLASS)
       .load()
       .as[MovieRating]
       .rdd
@@ -100,8 +73,8 @@ object OfflineRecommender {
     val movieRDD = spark
       .read
       .option("uri", mongoConfig.uri)
-      .option("collection", MONGODB_MOVIE_COLLECTION)
-      .format("com.mongodb.spark.sql")
+      .option("collection", MONGO_MOVIE_COLLECTION)
+      .format(MONGO_DRIVER_CLASS)
       .load()
       .as[Movie]
       .rdd
@@ -156,9 +129,9 @@ object OfflineRecommender {
     movieRecs
       .write
       .option("uri", mongoConfig.uri)
-      .option("collection", MOVIE_RECS)
+      .option("collection", MONGO_MOVIE_RECS_COLLECTION)
       .mode("overwrite")
-      .format("com.mongodb.spark.sql")
+      .format(MONGO_DRIVER_CLASS)
       .save()
 
     //关闭Spark

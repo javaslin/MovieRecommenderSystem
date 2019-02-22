@@ -6,6 +6,7 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import redis.clients.jedis.Jedis
+import com.shilin.java.model.Constant._
 
 import scala.collection.JavaConversions._
 
@@ -29,9 +30,7 @@ object StreamingRecommender {
 
   val MAX_USER_RATINGS_NUM = 20
   val MAX_SIM_MOVIES_NUM = 20
-  val MONGODB_STREAM_RECS_COLLECTION = "StreamRecs"
-  val MONGODB_RATING_COLLECTION = "Rating"
-  val MONGODB_MOVIE_RECS_COLLECTION = "MovieRecs"
+
 
   //入口方法
   def main(args: Array[String]): Unit = {
@@ -59,8 +58,8 @@ object StreamingRecommender {
     val simMoviesMatrix = spark
       .read
       .option("uri", config("mongo.uri"))
-      .option("collection", MONGODB_MOVIE_RECS_COLLECTION)
-      .format("com.mongodb.spark.sql")
+      .option("collection", MONGO_MOVIE_RECS_COLLECTION)
+      .format(MONGO_DRIVER_CLASS)
       .load()
       .as[MovieRecs]
       .rdd
@@ -126,7 +125,7 @@ object StreamingRecommender {
     */
   def saveRecsToMongoDB(uid: Int, streamRecs: Array[(Int, Double)])(implicit mongConfig: MongConfig): Unit = {
     //到StreamRecs的连接
-    val streaRecsCollection = ConnHelper.mongoClient(mongConfig.db)(MONGODB_STREAM_RECS_COLLECTION)
+    val streaRecsCollection = ConnHelper.mongoClient(mongConfig.db)(MONGO_STREAM_RECS_COLLECTION)
 
     streaRecsCollection.findAndRemove(MongoDBObject("uid" -> uid))
     streaRecsCollection.insert(MongoDBObject("uid" -> uid, "recs" -> streamRecs.map(x => x._1 + ":" + x._2).mkString("|")))
@@ -207,7 +206,7 @@ object StreamingRecommender {
     //从广播变量的电影相似度矩阵中获取当前电影所有的相似电影
     val allSimMovies = simMovies.get(mid).get.toArray
     //获取用户已经观看过得电影
-    val ratingExist = ConnHelper.mongoClient(mongConfig.db)(MONGODB_RATING_COLLECTION).find(MongoDBObject("uid" -> uid)).toArray.map { item =>
+    val ratingExist = ConnHelper.mongoClient(mongConfig.db)(MONGO_RATING_COLLECTION).find(MongoDBObject("uid" -> uid)).toArray.map { item =>
       item.get("mid").toString.toInt
     }
     //过滤掉已经评分过得电影，并排序输出

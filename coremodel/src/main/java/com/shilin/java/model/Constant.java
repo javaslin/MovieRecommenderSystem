@@ -52,4 +52,6 @@ public class Constant {
 
     //**************  LOG ****************
     public static final String USER_RATING_LOG_PREFIX = "USER_RATING_LOG_PREFIX:";
+    public static final String MONGO_DRIVER_CLASS = "com.mongodb.spark.sql";
+    public static final String ES_DRIVER_CLASS = "org.elasticsearch.spark.sql";
 }

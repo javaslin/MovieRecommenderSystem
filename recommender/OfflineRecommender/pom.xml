@@ -18,6 +18,10 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.shilin</groupId>
+            <artifactId>coremodel</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.scalanlp</groupId>
             <artifactId>jblas</artifactId>
             <version>${jblas.version}</version>
