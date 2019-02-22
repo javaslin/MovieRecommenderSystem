@@ -23,6 +23,27 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <finalName>kafkastream</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <mainfest>
+                            <mainClass>com.shilin.kafkastream.Application</mainClass>
+                        </mainfest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+
+
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

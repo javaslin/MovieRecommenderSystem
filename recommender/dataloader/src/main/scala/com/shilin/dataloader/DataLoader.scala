@@ -18,9 +18,6 @@ import org.elasticsearch.transport.client.PreBuiltTransportClient
 
 
 object DataLoader {
-  val MOVIE_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\movies.csv"
-  val RATING_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\ratings.csv"
-  val TAG_DATA_PATH = "E:\\QQ文件\\MovieRecommenderSystem\\recommender\\dataloader\\src\\main\\resources\\small\\tags.csv"
 
   //  val MONGODB_MOVIE_COLLECTION = "Movie"
   //  val MONGODB_RATING_COLLECTION = "Rating"
@@ -30,9 +27,31 @@ object DataLoader {
 
   //程序的入口
   def main(args: Array[String]): Unit = {
+
+    if (args.length != 7) {
+      System.err.println("Usage: java -jar dataloader.jar <mongo_server> <es_http_server> <es_trans_server> <es_cluster_name> <movie_data_path> <rating_data_path> <tag_data_path>\n"
+        + "   <mongo_server> \n"
+        + "   <es_http_server> \n"
+        + "   <es_trans_server> \n"
+        + "   <to> \n\n")
+      System.exit(1)
+
+
+    }
+    val mongo_server = args(0)
+    val es_http_server = args(1)
+    val es_trans_server = args(2)
+    val es_cluster_name = args(3)
+
+    val movie_data_path = args(4)
+    val rating_data_path = args(5)
+    val tag_data_path = args(6)
+
+
+
     val config = Map(
       "spark.cores" -> "local[*]",
-      "mongo.uri" -> "mongodb://bigdata:27017/recommender",
+      "mongo.uri" -> ("mongodb://bigdata:27017/" + MONGO_DATABASE),
       "mongo.db" -> "recommender",
       "es.httpHosts" -> "bigdata:9200",
       "es.transportHosts" -> "bigdata:9300",
@@ -47,18 +66,18 @@ object DataLoader {
     val spark = SparkSession.builder().config(sparkConf).getOrCreate()
 
     import spark.implicits._
-    val movieRDD = spark.sparkContext.textFile(MOVIE_DATA_PATH)
+    val movieRDD = spark.sparkContext.textFile(movie_data_path)
     val movieDF = movieRDD.map(item => {
       val attr = item.split("\\^")
       Movie(attr(0).toInt, attr(1).trim, attr(2).trim, attr(3).trim, attr(4).trim, attr(5).trim, attr(6).trim, attr(7).trim, attr(8).trim, attr(9).trim)
     }).toDF()
-    val ratingRDD = spark.sparkContext.textFile(RATING_DATA_PATH)
+    val ratingRDD = spark.sparkContext.textFile(rating_data_path)
     val ratingDF = ratingRDD.map(item => {
       val attr = item.split(",")
       MovieRating(attr(0).toInt, attr(1).toInt, attr(2).toDouble, attr(3).toInt)
     }).toDF()
 
-    val tagRDD = spark.sparkContext.textFile(TAG_DATA_PATH)
+    val tagRDD = spark.sparkContext.textFile(tag_data_path)
     val tagDF = tagRDD.map(item => {
       val attr = item.split(",")
       Tag(attr(0).toInt, attr(1).toInt, attr(2).trim, attr(3).toInt)
