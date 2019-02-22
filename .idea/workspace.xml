@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8072b019-2ca6-4254-a4b2-e60941bb03c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/website/assembly/dependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website/website" afterDir="false" />
+    <list default="true" id="8072b019-2ca6-4254-a4b2-e60941bb03c2" name="Default Changelist" comment="first">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coremodel/coremodel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coremodel/coremodel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coremodel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/coremodel/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/StreamingRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/com/shilin/streaming/StreamingRecommender.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/dataloader/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/dataloader/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/dataloader/src/main/scala/com/shilin/dataloader/DataLoader.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/kafkastream/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/kafkastream/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +28,7 @@
     <session id="1042734080">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -50,10 +38,11 @@
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -61,20 +50,22 @@
           <entry key="dummy" value="1" />
           <entry key="java" value="2018" />
           <entry key="jsp" value="15" />
+          <entry key="md" value="12" />
           <entry key="properties" value="7" />
           <entry key="scala" value="1960" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="1764" />
+          <entry key="xml" value="1766" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2018" />
           <entry key="JSP" value="15" />
+          <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Properties" value="7" />
           <entry key="Scala" value="1960" />
-          <entry key="XML" value="1764" />
+          <entry key="XML" value="1766" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,6 +74,7 @@
           <entry key="csv" value="2" />
           <entry key="java" value="48" />
           <entry key="jsp" value="1" />
+          <entry key="md" value="1" />
           <entry key="properties" value="6" />
           <entry key="scala" value="20" />
           <entry key="ts" value="1" />
@@ -94,6 +86,7 @@
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="48" />
           <entry key="JSP" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="6" />
           <entry key="Scala" value="20" />
@@ -114,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1593">
-              <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -122,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender/dataloader/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="1728">
               <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
             </state>
           </provider>
@@ -131,17 +124,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="2484">
               <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coremodel/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="195">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -149,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender/kafkastream/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
+            <state relative-caret-position="297">
               <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
@@ -158,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="1377">
+              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -224,9 +227,9 @@
         <option value="$PROJECT_DIR$/website/assembly/dependencies.xml" />
         <option value="$PROJECT_DIR$/recommender/dataloader/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml" />
-        <option value="$PROJECT_DIR$/coremodel/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/coremodel/pom.xml" />
       </list>
     </option>
   </component>
@@ -300,7 +303,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,79 +310,18 @@
               <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="coremodel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieRecommenderSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieRecommenderSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550827054841" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550827257943" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -494,7 +435,8 @@
       <workItem from="1550666256463" duration="387000" />
       <workItem from="1550799182413" duration="67000" />
       <workItem from="1550803466402" duration="8483000" />
-      <workItem from="1550815700612" duration="7656000" />
+      <workItem from="1550815700612" duration="7932000" />
+      <workItem from="1550830524803" duration="198000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1550804827611</created>
@@ -510,17 +452,23 @@
       <option name="project" value="LOCAL" />
       <updated>1550812283126</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first">
+      <created>1550827193732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550827193732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64837000" />
+    <option name="totallyTimeSpent" value="65334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-140" width="1456" height="916" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32803467" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33453757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -531,7 +479,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32957748" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.36901408" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.14647888" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.49295774" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -575,9 +523,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/model/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/service/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/shilin/server/utils/package-info.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -763,9 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="148" column="32" selection-start-line="148" selection-start-column="32" selection-end-line="148" selection-end-column="32" />
-          <folding>
-            <element signature="e#32#65#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -773,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="e#31#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,9 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2334">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,27 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataloader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/kafkastream/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coremodel/src/main/java/com/shilin/java/model/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
@@ -873,27 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="59" column="37" lean-forward="true" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/StreamingRcommender/src/main/scala/com/shilin/streaming/StreamingRecommender.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2465">
           <caret line="130" selection-start-line="130" selection-end-line="130" />
-          <folding>
-            <element signature="e#30#77#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,10 +809,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1593">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/dataloader/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2484">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/kafkastream/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/statisticsRecommender/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/coremodel/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="195">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
